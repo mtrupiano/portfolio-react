@@ -23,7 +23,7 @@ main {
 }
 
 /* Font and margin for h1 elements */
-h1 {
+#about-me-header {
     margin-bottom: 0;
     font-family: 'Encode Sans', sans-serif;
     font-weight: bold;
@@ -34,6 +34,17 @@ p {
     line-height: 150%;
     font-size: 16pt;
     font-family: 'Uni Sans Book', sans-serif;
+}
+
+/* Size and coloring for hr elements */
+#about-me-separator {
+    border: solid;
+    border-color: var(--purple-custom);
+    border-width: 2px;
+    border-radius: 20px;
+    margin-top: 2px;
+    color: var(--purple-custom);
+    background-color: var(--purple-custom);
 }
 
 /* Size and margin for headshot image */
