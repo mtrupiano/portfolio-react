@@ -30,8 +30,8 @@ export default function Home() {
                             by Trilogy Education and the University of Washington. In 2015 I graduated from the University of Washington with a
                             Bachelor of Science degree in mechanical engineering and I've held multiple positions in that field since. My
                             educational focus and industry experience revolved around medical device design and industrial
-                            machinery design. In 2018 I began thinking I may want to pivot my career toward becoming a software engineer, and I
-                            started taking some computer science fundamentals courses at the UW and at North Seattle Community College. I then
+                            machinery design. In 2018 I began thinking I may want to pivot my career toward becoming a software engineer, so I
+                            took some computer science fundamentals courses at the UW and at North Seattle Community College. I then
                             completed a one-year certificate program at the UW's Bothell campus called the Graduate Certificate in Software Design
                             and Development. This program gave me further education in computer science foundations, but upon completion I still struggled to find
                             work in the field. I'm now attending the aforementioned bootcamp with the hope of bolstering my software development
