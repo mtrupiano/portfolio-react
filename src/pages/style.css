@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700;800;900&display=swap');
+
+
+/* 
+    Specify the minimum width that the page will be responive to
+    (i.e. elements will stop adjusting size/position when viewport reaches this value)
+*/
+html {
+    min-width: 340px;
+}
+
+/* Default background color and default font for page bodies */
+body {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    background-color: var(--lightpurple-custom);
+}
+
+/* Margin and text color for all 'main' elements */
+main {
+    margin-top: 25px;
+    margin-bottom: 150px;
+    color: var(--purple-custom);
+}
+
+/* Font and margin for h1 elements */
+h1 {
+    margin-bottom: 0;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: bold;
+} 
+
+/* Font for p elements */
+p {
+    line-height: 150%;
+    font-size: 16pt;
+    font-family: 'Uni Sans Book', sans-serif;
+}
+
+/* Size and margin for headshot image */
+#headshot {
+    margin: 7px 25px 10px 0;
+    width: 300px;
+    min-width: 30%;
+}
+
+#secret-cat {
+    color: var(--purple-custom);
+}

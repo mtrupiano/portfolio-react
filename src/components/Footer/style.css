@@ -1,0 +1,18 @@
+/* Styling for the footer */
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700;800;900&display=swap');
+
+.footer {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    background-color: var(--purple-custom);
+    border-top: solid;
+    border-width: 3px;
+    border-color: var(--gold-custom);
+}
+
+/* Muted text color for footer */
+#footer-text {
+    font-family: 'Encode Sans', sans-serif;
+    color: #e8ddfd8a;
+}

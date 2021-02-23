@@ -1,0 +1,120 @@
+/* Custom color variables */
+:root {
+    --gold-custom: #B7A57A;
+    --lightpurple-custom: #EDE4FF;
+    --purple-custom: #4B2E83;
+}
+
+/* Custom font face declaration for Uni Sans Book */
+@font-face {
+    font-family: 'Uni Sans Book';
+    src: url('../../resources/UniSansBook.eot');
+    src: url('../../resources/UniSansBook.eot?#iefix') format('embedded-opentype'),
+        url('../../resources/UniSansBook.woff2') format('woff2'),
+        url('../../resources/UniSansBook.woff') format('woff'),
+        url('../../resources/UniSansBook.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Encode+Sans+Condensed:wght@400;500;800&display=swap');
+
+/* Margin for images */
+img {
+    margin: 5px 5px;
+}
+
+/* Colors and border for the navbar */
+.navbar {
+    color: var(--lightpurple-custom);
+    background-color: var(--purple-custom);
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: var(--gold-custom);
+}
+
+/* Increase the height of the nav bar */
+.navbar-brand {
+    margin-right: 10px;
+    height: 100px;
+}
+
+/* Background color and margin for the toggler button */
+.navbar-toggler {
+    background-color: var(--gold-custom)!important;
+    margin-right: 5px;
+}
+
+/* Use a custom link for the hamburger icon to change the color */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'><path stroke='rgba(75, 46, 131, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/></svg>")!important;
+}
+
+/* Style for nav buttons */
+.nav .btn-lg {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    color: var(--lightpurple-custom);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 11px!important;
+    padding-right: 11px!important;
+}
+
+/* Invert button colors on hover */
+.nav .btn-lg:hover {
+    background-color: var(--lightpurple-custom) !important;
+    color: var(--purple-custom) !important;
+}
+
+/* Default size of the navbar-brand logo image */
+#navbar-logo {
+    height: 70px;
+    width: 105px;
+    margin-top: 10px;
+}
+
+#wordmark {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    color: rgb(245, 235, 235);
+}
+
+/* Decrease the wordmark font size to prevent element wrapping */
+@media only screen and (max-width: 1055px) {
+    #wordmark {
+        font-size: 2.25rem;
+    }
+}
+
+/* Remove right margin on brand logo when main wordmark moves to center */
+@media only screen and (max-width: 767.98px) {
+    .navbar-brand {
+        margin-right: 0;
+    }
+}
+
+/* Decrease screen edge padding and navbar logo size for small screens */
+@media only screen and (max-width: 575.98px) {
+    .navbar {
+        padding-left: 0;
+        padding-right: 3px;
+    }
+
+    #navbar-logo {
+        height: 50px;
+        width: 75px;
+        margin-top: 20px;
+    }
+}
+
+/* Centers headshot, decreases wordmark font size to prevent element wrapping */
+@media only screen and (max-width: 500px) {
+
+    #wordmark {
+        font-size: 17pt;
+    }
+
+}
