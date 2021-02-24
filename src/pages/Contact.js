@@ -5,12 +5,13 @@ import Footer from '../components/Footer/';
 
 import './style.css';
 
-import resume from '../resources/Trupiano_Resume.pdf'
+import resume from '../resources/Trupiano_Resume.pdf';
 
 export default function Contact() {
     return (
         <div>
             <Header active='contact'/>
+
             <main id="contact-content" className="container" role="main">
                 {/* <!-- Content header --> */}
                 <div className="row">
@@ -20,7 +21,7 @@ export default function Contact() {
                     </div>
                 </div>
 
-                    {/* <!-- Content grid --> */}
+                {/* <!-- Content grid --> */}
                 <div className="row">
                     <div className="col-md-6 col-xs-12 mb-3">
                         <h3>Reach out to me with a message: </h3>
@@ -38,7 +39,9 @@ export default function Contact() {
                         </div>
                         <button className="btn btn-block" >Send</button>
                     </div>
+
                     <div className="col-md-1"></div>
+
                     <div className=" col-md-5 col-xs-12" id="check-me-out">
                             <h3>...or check me out here: </h3>
                         <ul className="list-group list-group-horizontal-xs">
@@ -58,6 +61,7 @@ export default function Contact() {
                     </div>
                 </div>
             </main>
+
             <Footer />
         </div>
     )
