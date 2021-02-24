@@ -11,7 +11,7 @@ import './style.css'
 export default function Home() {
     return (
         <div>
-            <Header />
+            <Header active='home' />
             <main className="container" role="main">
                 {/* <!-- Content header --> */}
                 <div className="row">

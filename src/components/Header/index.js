@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 
 import './style.css'
 
-export default function index() {
+export default function index(props) {
     return (
         <header>
             {/* <!-- Collapsible navigation bar --> */}
@@ -27,9 +27,9 @@ export default function index() {
                 {/* <!-- List of nav items --> */}
                 <Navbar.Collapse className="navbar-collapse collapse hide" id="navbarCollapse">
                     <Nav className="nav navbar-nav ml-auto">
-                        <Nav.Link className="nav-item active nav-link btn-lg">About Me</Nav.Link>
-                        <Nav.Link className="nav-item nav-link btn-lg">Portfolio</Nav.Link>
-                        <Nav.Link className="nav-item nav-link btn-lg">Contact</Nav.Link>
+                        <Nav.Link href='./home' className={'nav-item nav-link btn-lg' + (props.active==='home' ? ' active' : '')}>About Me</Nav.Link>
+                        <Nav.Link href='./portfolio' className={'nav-item nav-link btn-lg' + (props.active === 'portfolio' ? ' active' : '')}>Portfolio</Nav.Link>
+                        <Nav.Link href='./contact' className={'nav-item nav-link btn-lg' + (props.active === 'contact' ? ' active' : '')}>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

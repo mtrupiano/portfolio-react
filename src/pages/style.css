@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Encode+Sans+Condensed:wght@400;500;800&display=swap');
+
 
 /* 
     Specify the minimum width that the page will be responive to
@@ -12,7 +14,7 @@ html {
 /* Default background color and default font for page bodies */
 body {
     font-family: 'Encode Sans Condensed', sans-serif;
-    background-color: var(--lightpurple-custom);
+    background-color: var(--lightpurple-custom)!important;
 }
 
 /* Margin and text color for all 'main' elements */
@@ -56,4 +58,38 @@ p {
 
 #secret-cat {
     color: var(--purple-custom);
+}
+
+/* Font for the contact page content */
+#contact-content {
+    font-family: "Encode Sans", sans-serif;
+}
+
+/* More custom style for the contact page content */
+#contact-content h3 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#contact-content textarea {
+    min-height: 38px;
+}
+
+#contact-content .list-group-item {
+    background-color: #ede4ffb0;
+}
+
+#contact-content .btn {
+    color: var(--lightpurple-custom);
+    background-color: var(--purple-custom);
+    font-size: 18pt;
+}
+
+#contact-content a {
+    color: var(--purple-custom);
+    font-size: 18pt;
+}
+
+#contact-content a:visited {
+    color: var(--gold-custom);
 }
