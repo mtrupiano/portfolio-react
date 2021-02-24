@@ -25,7 +25,7 @@ main {
 }
 
 /* Font and margin for h1 elements */
-#about-me-header {
+.page-header {
     margin-bottom: 0;
     font-family: 'Encode Sans', sans-serif;
     font-weight: bold;
@@ -39,7 +39,7 @@ p {
 }
 
 /* Size and coloring for hr elements */
-#about-me-separator {
+.page-header-separator {
     border: solid;
     border-color: var(--purple-custom);
     border-width: 2px;

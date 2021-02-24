@@ -15,8 +15,8 @@ export default function Contact() {
                 {/* <!-- Content header --> */}
                 <div className="row">
                     <div className="col">
-                        <h1>Contact</h1>
-                        <hr/>
+                        <h1 className='page-header'>Contact</h1>
+                        <hr className='page-header-separator'/>
                     </div>
                 </div>
 

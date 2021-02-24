@@ -16,8 +16,8 @@ export default function Home() {
                 {/* <!-- Content header --> */}
                 <div className="row">
                     <div className="col-md-12">
-                        <h1 id="about-me-header">About Me</h1>
-                        <hr id='about-me-separator'/>
+                        <h1 className="page-header">About Me</h1>
+                        <hr className='page-header-separator'/>
                     </div>
                 </div>
 
