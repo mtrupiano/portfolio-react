@@ -1,0 +1,15 @@
+/* Custom color variables */
+:root {
+    --gold-custom: #B7A57A;
+    --lightpurple-custom: #EDE4FF;
+    --purple-custom: #4B2E83;
+}
+
+.list-group-item .btn {
+    color: var(--purple-custom);
+    width: 120px;
+}
+
+.list-group-item .btn:hover {
+    background-color: var(--lightpurple-custom);
+}
