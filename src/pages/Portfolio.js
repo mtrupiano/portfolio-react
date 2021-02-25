@@ -6,6 +6,9 @@ import Project from '../components/Project';
 
 import descriptions from '../resources/descriptions.json';
 
+import allmarketTile from '../resources/allmarket-tile.png';
+import webm8Tile from '../resources/webm8-tile.png';
+
 export default function Portfolio() {
     return (
         <div>
@@ -22,12 +25,12 @@ export default function Portfolio() {
                     <Project title='allmarket' 
                         github='https://github.com/mtrupiano/allmarket' 
                         deployed='https://mtrupiano.github.io/allmarket/' 
-                        thumbnail=''
+                        thumbnail={allmarketTile}
                         description={descriptions.allmarket} />
-                    <Project title='webm8' 
+                    <Project title='webM8' 
                         github='https://github.com/mtrupiano/Bookmark-Manager' 
                         deployed='https://webm8.herokuapp.com/' 
-                        thumbnail=''
+                        thumbnail={webm8Tile}
                         description={descriptions.webm8}/>
                 </ul>
             <Footer />

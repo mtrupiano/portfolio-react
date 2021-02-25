@@ -5,6 +5,15 @@
     --purple-custom: #4B2E83;
 }
 
+img {
+    width: 175px;
+    height: 175px;
+}
+
+.thumbnail-column {
+    max-width: 22%!important;
+}
+
 .list-group-item .btn {
     color: var(--purple-custom);
     width: 120px;

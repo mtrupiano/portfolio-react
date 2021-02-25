@@ -9,10 +9,12 @@ export default function index(props) {
     return (
         <li className='list-group-item'>
             <div className='row'>
-                <div className='col-md-2'>
-                    
+                <div className='col-md-3 d-flex justify-content-center thumbnail-column'>
+                    <a href={props.deployed} target='_blank'>
+                        <img src={props.thumbnail}></img>
+                    </a>
                 </div>
-                <div className='col-md-8 mb-2'>
+                <div className='col-md-7 mb-2'>
                     <h3 className='project-header'>{props.title}</h3>
                     {props.description}
                 </div>
@@ -24,7 +26,7 @@ export default function index(props) {
                             </a>
                         </div>
                         <div className='col'>
-                            <a className='btn' href={props.github} target='_blank'>
+                            <a className='btn' href={props.deployed} target='_blank'>
                                 <BoxArrowInRight className='mr-2'/>
                                 Deployed
                             </a>
