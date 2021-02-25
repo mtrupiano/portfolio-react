@@ -11,11 +11,7 @@ export default function index(props) {
             <div className='row'>
                 <div className='col-md-3 d-flex justify-content-center thumbnail-column'>
                     <a href={props.deployed} rel='noopener noreferrer' target='_blank'>
-<<<<<<< HEAD
-                        <img src={props.thumbnail} alt={props.title + '-thumbnail'}></img>
-=======
                         <img src={props.thumbnail} alt={props.title+'-thumbnail'}></img>
->>>>>>> a99c82855f7270fe0deaf2eee9679a5766c56de2
                     </a>
                 </div>
                 <div className='col-md-7 mb-2'>
@@ -25,11 +21,7 @@ export default function index(props) {
                 <div className='col-md-2 pl-5 d-flex align-items-center'>
                     <div className='row'>
                         <div className='col mb-2'>
-<<<<<<< HEAD
-                            <a className='btn btn-large' href={props.github} rel='noopener noreferrer' target='_blank'>
-=======
                             <a className='btn' href={props.github} rel='noopener noreferrer' target='_blank'>
->>>>>>> a99c82855f7270fe0deaf2eee9679a5766c56de2
                                 <Github className='mr-2'/>Github
                             </a>
                         </div>
