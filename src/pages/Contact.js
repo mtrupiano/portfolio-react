@@ -1,4 +1,4 @@
-import React from 'react';
+import { React, useState } from 'react';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer/';
@@ -8,6 +8,24 @@ import './style.css';
 import resume from '../resources/Trupiano_Resume.pdf';
 
 export default function Contact() {
+
+    const [ message, setMessage ] = useState({
+        name: '',
+        email: '',
+        message: ''
+    });
+
+    const handleInput = (event) => {
+        setMessage({
+            ...message,
+            [event.target.name]: event.target.value
+        });
+    }
+
+    const handleSubmit = (event) => {
+        console.log(message);
+    }
+
     return (
         <div>
             <Header active='contact'/>
@@ -27,17 +45,34 @@ export default function Contact() {
                         <h3>Reach out to me with a message: </h3>
                         <div className="form-group">
                             <label className="h4" forHTML="formNameEntry">Name</label>
-                            <input type="text" className="form-control" placeholder="Name"/>
+                            <input onChange={handleInput}
+                                type="text"
+                                name='name'
+                                className="form-control" 
+                                placeholder="Name"
+                                value={message.name} />
                         </div>
                         <div className="form-group">
                             <label className="h4" forHTML="formEmailEntry">E-mail</label>
-                            <input type="email" className="form-control" placeholder="name@example.com"/>
+                            <input onChange={handleInput}
+                                type="email"
+                                name='email'
+                                className="form-control" 
+                                placeholder="name@example.com" 
+                                value={message.email} />
                         </div>
                         <div className="form-group">
-                            <label className="h4" forHTML="formMessageBox">Message</label>
-                            <textarea className="form-control" name="" id="" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                            <label className="h4" htmlFor="formMessageBox">Message</label>
+                            <textarea onChange={handleInput}
+                                className="form-control" 
+                                name="message"
+                                id="formMessageBox"
+                                cols="30" 
+                                rows="10" 
+                                placeholder="Write your message here..."
+                                value={message.message} />
                         </div>
-                        <button className="btn btn-block" >Send</button>
+                        <button onClick={handleSubmit} className="btn btn-block">Send</button>
                     </div>
 
                     <div className="col-md-1"></div>
@@ -49,7 +84,10 @@ export default function Contact() {
                                 <a href="https://github.com/mtrupiano" target="_blank">Github</a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
-                                <a href="https://www.linkedin.com/in/mark-trupiano-709043163/" target="_blank">LinkedIn</a>
+                                <a target="_blank"
+                                    href="https://www.linkedin.com/in/mark-trupiano-709043163/">
+                                    LinkedIn
+                                </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
                                 <a href="mailto:markt4@uw.edu" target="_blank">markt4@uw.edu</a>
