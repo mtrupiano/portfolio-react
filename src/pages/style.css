@@ -20,7 +20,7 @@ body {
 /* Margin and text color for all 'main' elements */
 main {
     margin-top: 25px;
-    margin-bottom: 150px;
+    margin-bottom: 0;
     color: var(--purple-custom);
 }
 

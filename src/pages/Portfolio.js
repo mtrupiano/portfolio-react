@@ -25,7 +25,7 @@ export default function Portfolio() {
                         <hr className='page-header-separator' />
                     </div>
                 </div>
-                <ul className='list-group' id='portfolio-list'>
+                <ul className='list-group mb-5' id='portfolio-list'>
                     <Project title='allmarket' 
                         github='https://github.com/mtrupiano/allmarket' 
                         deployed='https://mtrupiano.github.io/allmarket/' 

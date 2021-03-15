@@ -94,28 +94,28 @@ export default function Contact() {
 
                     <div className=" col-md-5 col-xs-12" id="check-me-out">
                             <h3>...or check me out here: </h3>
-                        <ul className="list-group list-group-horizontal-xs">
+                        <ul className="list-group list-group-horizontal-xs mb-5">
                             <li className="list-group-item flex-fill text-center">
-                                <a href="https://github.com/mtrupiano" target="_blank">
+                                <a href="https://github.com/mtrupiano" rel='noreferrer' target="_blank">
                                     <Github className='mr-2 bootstrap-icon' />
                                     Github
                                 </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
-                                <a target="_blank"
+                                <a target="_blank" rel='noreferrer'
                                     href="https://www.linkedin.com/in/mark-trupiano-709043163/">
                                     <Linkedin className='mr-2 bootstrap-icon' />
                                     LinkedIn
                                 </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
-                                <a href="mailto:markt4@uw.edu" target="_blank">
+                                <a href="mailto:markt4@uw.edu" rel='noreferrer' target="_blank">
                                     <Envelope className='mr-2 bootstrap-icon' />
                                     markt4@uw.edu
                                 </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
-                                <a href={resume} target="_blank">
+                                <a href={resume} rel='noreferrer' target="_blank">
                                     <FileText className='mr-2 bootstrap-icon' />
                                     Resume
                                 </a>

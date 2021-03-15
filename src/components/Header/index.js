@@ -19,9 +19,9 @@ export default function index(props) {
                 {/* <!-- Wordmark --> */}
                 <div id="wordmark">
                     <h1>MARK TRUPIANO</h1>
-                    <h2>Full Stack Web Developer</h2>
-                    <h2>Graduate Certificate in Software Design & Development</h2>
-                    <h2>B.S. Mechanical Engineering</h2>
+                    <h2 className='titles'>Full Stack Web Developer</h2>
+                    <h2 className='titles'>Graduate Certificate in Software Design & Development, UW Bothell</h2>
+                    <h2 className='titles'>B.S. Mechanical Engineering, UW Seattle</h2>
                 </div>
 
                 {/* <!-- Collapse/expand button (only shows on 'small' screens) --> */}
