@@ -8,6 +8,9 @@ import descriptions from '../resources/descriptions.json';
 
 import allmarketTile from '../resources/allmarket-tile.png';
 import webm8Tile from '../resources/webm8-tile.png';
+import k4hTile from '../resources/bookicon.png';
+
+import './style.css'
 
 export default function Portfolio() {
     return (
@@ -31,7 +34,12 @@ export default function Portfolio() {
                         github='https://github.com/mtrupiano/Bookmark-Manager' 
                         deployed='https://webm8.herokuapp.com/' 
                         thumbnail={webm8Tile}
-                        description={descriptions.webm8}/>
+                        description={descriptions.webm8} />
+                    <Project title='Knowledge4Hire'
+                        github='https://github.com/Drantho/KnowledgeForHigher'
+                        deployed='https://knowledge4hire.herokuapp.com/'
+                        thumbnail={k4hTile}
+                        description={descriptions.k4h} />
                 </ul>
             <Footer />
             </main>

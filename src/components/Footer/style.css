@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;600;700;800;900&display=swap');
 
 .footer {
-    height: 60px;
+    height: 20px;
     line-height: 60px;
     width: 100%;
     background-color: var(--purple-custom);
