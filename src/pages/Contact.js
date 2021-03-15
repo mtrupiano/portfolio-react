@@ -24,6 +24,20 @@ export default function Contact() {
 
     const handleSubmit = (event) => {
         console.log(message);
+        window.emailjs.send('service_6ea6vhh', 'template_ci7tutj', {
+            message: message.message,
+            from_name: message.name,
+            reply_to: message.email
+        }).then( (response) => {
+            console.log('Email sent');
+            setMessage({
+                name: '',
+                email: '',
+                message: ''
+            })
+        }).catch( (err) => {
+            console.log(err);
+        });
     }
 
     return (
