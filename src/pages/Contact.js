@@ -1,4 +1,5 @@
 import { React, useState } from 'react';
+import { Github, Linkedin, Envelope, FileText } from 'react-bootstrap-icons';
 
 import Header from '../components/Header';
 import Footer from '../components/Footer/';
@@ -95,19 +96,29 @@ export default function Contact() {
                             <h3>...or check me out here: </h3>
                         <ul className="list-group list-group-horizontal-xs">
                             <li className="list-group-item flex-fill text-center">
-                                <a href="https://github.com/mtrupiano" target="_blank">Github</a>
+                                <a href="https://github.com/mtrupiano" target="_blank">
+                                    <Github className='mr-2 contact-icon' />
+                                    Github
+                                </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
                                 <a target="_blank"
                                     href="https://www.linkedin.com/in/mark-trupiano-709043163/">
+                                    <Linkedin className='mr-2 contact-icon' />
                                     LinkedIn
                                 </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
-                                <a href="mailto:markt4@uw.edu" target="_blank">markt4@uw.edu</a>
+                                <a href="mailto:markt4@uw.edu" target="_blank">
+                                    <Envelope className='mr-2 contact-icon' />
+                                    markt4@uw.edu
+                                </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
-                                <a href={resume} target="_blank">Resume</a>
+                                <a href={resume} target="_blank">
+                                    <FileText className='mr-2 contact-icon' />
+                                    Resume
+                                </a>
                             </li>
                         </ul>
                     </div>

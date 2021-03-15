@@ -38,6 +38,10 @@ p {
     font-family: 'Roboto', sans-serif;
 }
 
+.contact-icon {
+    margin-top: -3px;
+}
+
 /* Size and coloring for hr elements */
 .page-header-separator {
     border: solid;
