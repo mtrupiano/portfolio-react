@@ -82,6 +82,16 @@ img {
     color: rgb(245, 235, 235);
 }
 
+#wordmark h1 {
+    font-size: 48pt;
+}
+
+#wordmark h2 {
+    font-family: 'Uni-Sans-Book', sans-serif;
+    font-size: 12pt;
+    margin-bottom: 0px;
+}
+
 /* Decrease the wordmark font size to prevent element wrapping */
 @media only screen and (max-width: 1055px) {
     #wordmark {

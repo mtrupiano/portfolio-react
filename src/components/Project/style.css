@@ -12,11 +12,12 @@
 
 .thumbnail-column {
     max-width: 22%!important;
+    min-width: 215px!important;
 }
 
 .list-group-item .btn {
     color: var(--purple-custom);
-    width: 150px;
+    width: 120px;
 }
 
 .list-group-item .btn:hover {
@@ -32,4 +33,12 @@ p.description {
 a.btn {
     font-family: 'Encode Sans Condensed', sans-serif;
     font-size: 16pt;
+    padding: 5px;
+}
+
+@media only screen and (max-width: 991.98px) {
+    .project-links {
+        display: flex;
+        justify-content: space-around;
+    }
 }

@@ -97,26 +97,26 @@ export default function Contact() {
                         <ul className="list-group list-group-horizontal-xs">
                             <li className="list-group-item flex-fill text-center">
                                 <a href="https://github.com/mtrupiano" target="_blank">
-                                    <Github className='mr-2 contact-icon' />
+                                    <Github className='mr-2 bootstrap-icon' />
                                     Github
                                 </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
                                 <a target="_blank"
                                     href="https://www.linkedin.com/in/mark-trupiano-709043163/">
-                                    <Linkedin className='mr-2 contact-icon' />
+                                    <Linkedin className='mr-2 bootstrap-icon' />
                                     LinkedIn
                                 </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
                                 <a href="mailto:markt4@uw.edu" target="_blank">
-                                    <Envelope className='mr-2 contact-icon' />
+                                    <Envelope className='mr-2 bootstrap-icon' />
                                     markt4@uw.edu
                                 </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
                                 <a href={resume} target="_blank">
-                                    <FileText className='mr-2 contact-icon' />
+                                    <FileText className='mr-2 bootstrap-icon' />
                                     Resume
                                 </a>
                             </li>

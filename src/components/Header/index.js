@@ -17,7 +17,12 @@ export default function index(props) {
                 </Navbar.Brand>
 
                 {/* <!-- Wordmark --> */}
-                <h1 className="display-4" id="wordmark">MARK TRUPIANO</h1>
+                <div id="wordmark">
+                    <h1>MARK TRUPIANO</h1>
+                    <h2>Full Stack Web Developer</h2>
+                    <h2>Graduate Certificate in Software Design & Development</h2>
+                    <h2>B.S. Mechanical Engineering</h2>
+                </div>
 
                 {/* <!-- Collapse/expand button (only shows on 'small' screens) --> */}
                 <Navbar.Toggle className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
