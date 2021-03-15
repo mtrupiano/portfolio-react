@@ -10,7 +10,8 @@ import allmarketTile from '../resources/allmarket-tile.png';
 import webm8Tile from '../resources/webm8-tile.png';
 import k4hTile from '../resources/bookicon.png';
 
-import './style.css'
+import './style.css';
+import '../pages/style.css';
 
 export default function Portfolio() {
     return (
