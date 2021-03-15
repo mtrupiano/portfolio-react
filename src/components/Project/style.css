@@ -16,9 +16,20 @@
 
 .list-group-item .btn {
     color: var(--purple-custom);
-    width: 120px;
+    width: 150px;
 }
 
 .list-group-item .btn:hover {
     background-color: var(--lightpurple-custom);
+}
+
+p.description {
+    line-height: 150%;
+    font-size: 14pt;
+    font-family: 'Roboto', sans-serif;
+}
+
+a.btn {
+    font-family: 'Encode Sans Condensed', sans-serif;
+    font-size: 16pt;
 }

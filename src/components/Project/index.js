@@ -3,8 +3,6 @@ import { BoxArrowInRight, Github } from 'react-bootstrap-icons';
 
 import './style.css';
 
-import '../../pages/style.css';
-
 export default function index(props) {
     return (
         <li className='list-group-item'>
@@ -16,7 +14,7 @@ export default function index(props) {
                 </div>
                 <div className='col-md-7 mb-2'>
                     <h3 className='project-header'>{props.title}</h3>
-                    {props.description}
+                    <p class='description'>{props.description}</p>
                 </div>
                 <div className='col-md-2 pl-5 d-flex align-items-center'>
                     <div className='row'>
