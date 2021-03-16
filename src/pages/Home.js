@@ -23,11 +23,11 @@ export default function Home() {
 
                     {/* <!-- Content grid --> */}
                 <div className="row">
-                    <div className="content col-md-12">
+                    <div className="content col-md-12 mb-5">
                         <img className="float-left rounded" id="headshot" src={headshot} alt="headshot" />
                         <p>
-                            My name's Mark Trupiano and I'm a 29-year-old Seattleite who recently finished the full-stack web development bootcamp run
-                            by Trilogy Education and the University of Washington. In 2015 I graduated from the University of Washington with a
+                            My name's Mark and I'm a Seattleite who recently finished the full-stack web development bootcamp run
+                            by Trilogy Education and the University of Washington. In 2015 I graduated from UW with a
                             Bachelor of Science degree in mechanical engineering and I've held multiple positions in that field since. My
                             educational focus and industry experience revolved around medical device design and industrial
                             machinery design. 

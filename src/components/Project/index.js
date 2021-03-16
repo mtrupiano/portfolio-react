@@ -16,8 +16,8 @@ export default function index(props) {
                     <h3 className='project-header'>{props.title}</h3>
                     <p class='description'>{props.description}</p>
                 </div>
-                <div className='col-lg-2 mx-auto'>
-                    <div className='mx-auto project-links'>
+                <div className='col-lg-2 mx-auto links-column'>
+                    <div className='project-links'>
                         <a className='btn align-middle' 
                             href={props.github} 
                             rel='noopener noreferrer' 

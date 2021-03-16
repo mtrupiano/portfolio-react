@@ -36,7 +36,16 @@ a.btn {
     padding: 5px;
 }
 
+.links-column {
+    display: flex;
+    align-items: center;
+}
+
 @media only screen and (max-width: 991.98px) {
+    .links-column {
+        display: inline;
+    }
+    
     .project-links {
         display: flex;
         justify-content: space-around;
