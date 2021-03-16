@@ -94,13 +94,6 @@ img {
     margin-bottom: 0px;
 }
 
-/* Decrease the wordmark font size to prevent element wrapping */
-@media only screen and (max-width: 1055px) {
-    #wordmark {
-        font-size: 2.25rem;
-    }
-}
-
 /* Remove right margin on brand logo when main wordmark moves to center */
 @media only screen and (max-width: 991.98px) {
     .navbar-brand {
@@ -128,13 +121,20 @@ img {
         padding-right: 3px;
     }
 
+    #navbar-logo {
+        display: none;
+    }
+
+    #wordmark h1 {
+        font-size: 20pt
+    }
+
 }
 
-/* Centers headshot, decreases wordmark font size to prevent element wrapping */
 @media only screen and (max-width: 500px) {
 
     #wordmark {
-        font-size: 17pt;
+        font-size: 16pt;
     }
 
 }
