@@ -83,7 +83,7 @@ img {
 }
 
 #wordmark h1 {
-    font-size: 42pt;
+    font-size: 36pt;
     margin-bottom: 0;
 }
 
@@ -92,6 +92,19 @@ img {
     padding: 1px 0 1px 0;
     font-size: 12pt;
     margin-bottom: 0px;
+}
+
+#page-links {
+    display: flex;
+    min-height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+#page-links a {
+    color: white;
+    padding: 3px 0;
 }
 
 /* Remove right margin on brand logo when main wordmark moves to center */

@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { Github, Linkedin, Envelope, FileText } from 'react-bootstrap-icons';
 
 import './style.css'
 
@@ -24,6 +25,7 @@ export default function index(props) {
                     <h2 className='titles'>B.S. Mechanical Engineering, UW Seattle</h2>
                 </div>
 
+
                 {/* <!-- Collapse/expand button (only shows on 'small' screens) --> */}
                 <Navbar.Toggle className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -37,6 +39,18 @@ export default function index(props) {
                         <Nav.Link href='./contact' className={'nav-item nav-link btn-lg' + (props.active === 'contact' ? ' active' : '')}>Contact</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
+                <div id='page-links'>
+                    <a href="https://github.com/mtrupiano" rel='noreferrer' target="_blank">
+                        <Github size={24} className='mr-2 bootstrap-icon' />
+                    </a>
+                    <a target="_blank" rel='noreferrer'
+                        href="https://www.linkedin.com/in/mark-trupiano-709043163/">
+                        <Linkedin size={24} className='mr-2 bootstrap-icon' />
+                    </a>
+                    <a href="mailto:markt4@uw.edu" rel='noreferrer' target="_blank">
+                        <Envelope size={24} className='mr-2 bootstrap-icon' />
+                    </a>
+                </div>
             </Navbar>
 
         </header>
