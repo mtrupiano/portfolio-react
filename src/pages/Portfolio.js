@@ -37,8 +37,8 @@ export default function Portfolio() {
                         thumbnail={webm8Tile}
                         description={descriptions.webm8} />
                     <Project title='Knowledge4Hire'
-                        github='https://github.com/Drantho/KnowledgeForHigher'
-                        deployed='https://knowledge4hire.herokuapp.com/'
+                        github='https://github.com/mtrupiano/k4h-client'
+                        deployed='https://mst-k4h.netlify.app/'
                         thumbnail={k4hTile}
                         description={descriptions.k4h} />
                 </ul>
