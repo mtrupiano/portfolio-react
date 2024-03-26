@@ -13,28 +13,30 @@ export default function Contact() {
     const [ message, setMessage ] = useState({
         name: '',
         email: '',
-        message: ''
+        message: '',
     });
 
     const handleInput = (event) => {
         setMessage({
             ...message,
-            [event.target.name]: event.target.value
+            [event.target.name]: event.target.value,
         });
     }
 
     const handleSubmit = (event) => {
-        console.log(message);
-        window.emailjs.send('service_6ea6vhh', 'template_ci7tutj', {
-            message: message.message,
-            from_name: message.name,
-            reply_to: message.email
-        }).then( (response) => {
-            console.log('Email sent');
+        window.emailjs.send(
+            process.env.REACT_APP_EMAIL_JS_SERVICE_ID, 
+            process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID, 
+            {
+                message: message.message,
+                from_name: message.name,
+                reply_to: message.email,
+            }
+        ).then( (response) => {
             setMessage({
                 name: '',
                 email: '',
-                message: ''
+                message: '',
             })
         }).catch( (err) => {
             console.log(err);
@@ -60,32 +62,38 @@ export default function Contact() {
                         <h3>Reach out to me with a message: </h3>
                         <div className="form-group">
                             <label className="h4" forHTML="formNameEntry">Name</label>
-                            <input onChange={handleInput}
+                            <input 
+                                onChange={handleInput}
                                 type="text"
                                 name='name'
                                 className="form-control" 
                                 placeholder="Name"
-                                value={message.name} />
+                                value={message.name} 
+                            />
                         </div>
                         <div className="form-group">
                             <label className="h4" forHTML="formEmailEntry">E-mail</label>
-                            <input onChange={handleInput}
+                            <input 
+                                onChange={handleInput}
                                 type="email"
                                 name='email'
                                 className="form-control" 
                                 placeholder="name@example.com" 
-                                value={message.email} />
+                                value={message.email} 
+                            />
                         </div>
                         <div className="form-group">
                             <label className="h4" htmlFor="formMessageBox">Message</label>
-                            <textarea onChange={handleInput}
+                            <textarea 
+                                onChange={handleInput}
                                 className="form-control" 
                                 name="message"
                                 id="formMessageBox"
                                 cols="30" 
                                 rows="10" 
                                 placeholder="Write your message here..."
-                                value={message.message} />
+                                value={message.message} 
+                            />
                         </div>
                         <button onClick={handleSubmit} className="btn btn-block">Send</button>
                     </div>
