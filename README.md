@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# My Portfolio
+
+This is a simple Create React App application that I made near the end of my bootcamp.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
