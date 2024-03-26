@@ -117,9 +117,9 @@ export default function Contact() {
                                 </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
-                                <a href="mailto:markt4@uw.edu" rel='noreferrer' target="_blank">
+                                <a href="mailto:mtrupiano2@gmail.com" rel='noreferrer' target="_blank">
                                     <Envelope className='mr-2 bootstrap-icon' />
-                                    markt4@uw.edu
+                                    mtrupiano2@gmail.com
                                 </a>
                             </li>
                             <li className="list-group-item flex-fill text-center">
