@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { Github, Linkedin, Envelope, FileText } from 'react-bootstrap-icons';
+import { Github, Linkedin, Envelope } from 'react-bootstrap-icons';
 
 import './style.css'
 
