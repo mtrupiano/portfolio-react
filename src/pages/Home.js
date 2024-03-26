@@ -40,7 +40,7 @@ export default function Home() {
                             portfolio with more practical skills.
                         <br/><br/>
                             Outside of education and my career I spend my time enjoying the outdoors, enjoying the company of my 19-year-old cat,  
-                             <a href={cali} id="secret-cat" target="_blank"> Cali</a>, and enjoying the company of my family and friends.
+                             <a href={cali} id="secret-cat" target="_blank" rel="noreferrer"> Cali</a>, and enjoying the company of my family and friends.
                             I'm also an avid football-watcher (go Huskies and go Packers!), PC gamer, and concert-goer. If I'm not doing one of the above activities, you'll probably find me tinkering with my custom built PC or one of my other hobby tech projects.
                         <br/><br/>
                             I'm excited to learn even more about software/web development and get my career re-started!
